@@ -1,0 +1,19 @@
+#u-left-column {
+  margin-right: 7rpx !important;
+}
+#u-right-column {
+  margin-left: 7rpx !important;
+}
+.u-tabs {
+  .u-tab-item:not(:first-child) {
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 20rpx;
+      bottom: 20rpx;
+      width: 1rpx;
+      background-color: #e6e6e6;
+    }
+  }
+}

@@ -1,0 +1,79 @@
+<template>
+  <project-head @get-projects="getProjects" />
+  <!-- #ifdef APP-PLUS -->
+  <waterfall
+    column-count="2"
+    column-width="auto"
+    column-gap="12"
+    left-gap="12"
+    right-gap="12"
+    :style="{
+      marginTop: '8px',
+    }"
+  >
+    <!-- 循环 projectList -->
+    <cell v-for="item in projects" :key="item.id">
+      <project-item :item="item" />
+    </cell>
+  </waterfall>
+  <!-- #endif -->
+  <!-- #ifdef H5 || MP-WEIXIN -->
+  <view class="project-wrapper u-p-24">
+    <u-waterfall ref="ufallRef" v-model="projects">
+      <template #left="{ leftList }">
+        <project-item v-for="item in leftList" :key="item.id" :item="item" />
+      </template>
+      <template #right="{ rightList }">
+        <project-item v-for="item in rightList" :key="item.id" :item="item" />
+      </template>
+    </u-waterfall>
+  </view>
+  <!-- #endif -->
+</template>
+
+<script setup>
+import { ref } from 'vue';
+import { onNavigationBarButtonTap } from '@dcloudio/uni-app';
+import projectItem from './components/project-item.vue';
+import ProjectHead from './components/project-head.vue';
+const projects = ref([]);
+
+const ufallRef = ref(null);
+
+function getProjects({ id, keyWord }) {
+  uni.$service.projectService.getAllProjects(id, keyWord).then((res) => {
+    // #ifdef H5 || MP-WEIXIN
+    ufallRef.value.clear();
+    // #endif
+    projects.value = res;
+  });
+}
+
+onNavigationBarButtonTap((e) => {
+  getApp().globalData.fromHome = '1';
+  uni.navigateTo({
+    url: '/pages/user/user/index',
+  });
+});
+</script>
+
+<style scoped lang="scss">
+.project-center {
+  padding: 16rpx 24rpx;
+  background: #f2f4f7;
+
+  .project-center_header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    .project-center_header_select {
+      width: 222rpx;
+    }
+  }
+
+  .project-list {
+    margin-top: 16rpx;
+  }
+}
+</style>

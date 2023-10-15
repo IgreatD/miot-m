@@ -1,0 +1,295 @@
+{
+  "pages": [
+    {
+      "path": "pages/project-center/index",
+      "style": {
+        "navigationBarTitleText": "我的项目",
+        "titleNView": {
+          "buttons": [
+            {
+              "fontSrc": "/static/iconfont/iconfont.ttf",
+              "color": "#FFF",
+              "colorPressed": "#eee",
+              "float": "right",
+              "text": "\ue6d6",
+              "fontSize": "24px"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "path": "pages/project-center/tabbar",
+      "style": {
+        "navigationBarTitleText": ""
+      }
+    },
+    {
+      "path": "pages/dashboard/index",
+      "style": {
+        "navigationBarTitleText": "工作台"
+      }
+    },
+    {
+      "path": "pages/message/index",
+      "style": {
+        "navigationBarTitleText": "消息"
+      }
+    },
+    {
+      "path": "pages/user/user/index",
+      "style": {
+        "navigationBarTitleText": "我的"
+      }
+    },
+    {
+      "path": "pages/user/version",
+      "style": {
+        "navigationBarTitleText": "版本信息"
+      }
+    },
+    {
+      "path": "pages/user/info/index",
+      "style": {
+        "navigationBarTitleText": "个人信息"
+      }
+    },
+    {
+      "path": "pages/user/info/avatar",
+      "style": {
+        "navigationBarTitleText": "头像"
+      }
+    },
+    {
+      "path": "pages/user/info/phone",
+      "style": {
+        "navigationBarTitleText": "修改电话"
+      }
+    },
+    {
+      "path": "pages/user/info/edit",
+      "style": {
+        "navigationBarTitleText": "修改用户名"
+      }
+    },
+    {
+      "path": "pages/user/info/password",
+      "style": {
+        "navigationBarTitleText": "修改密码"
+      }
+    },
+    {
+      "path": "pages/user/feedback",
+      "style": {
+        "navigationBarTitleText": "用户反馈"
+      }
+    },
+    {
+      "path": "pages/user/scan-app",
+      "style": {
+        "navigationBarTitleText": "扫我安装"
+      }
+    },
+    {
+      "path": "pages/per-overview/pro-per/index",
+      "style": {
+        "navigationBarTitleText": "产能绩效"
+      }
+    },
+    {
+      "path": "pages/per-overview/maintain-pro/index",
+      "style": {
+        "navigationBarTitleText": "运维绩效"
+      }
+    },
+    {
+      "path": "pages/per-overview/run-report/index",
+      "style": {
+        "navigationBarTitleText": "运行报表"
+      }
+    },
+    {
+      "path": "pages/repair/repair-order/index",
+      "style": {
+        "navigationBarTitleText": "维修工单"
+      }
+    },
+    {
+      "path": "pages/check/check-task/index",
+      "style": {
+        "navigationBarTitleText": "巡检任务"
+      }
+    },
+    {
+      "path": "pages/check/check-transfer/index",
+      "style": {
+        "navigationBarTitleText": "转单"
+      }
+    },
+    {
+      "path": "pages/check/check-order-list/index",
+      "style": {
+        "navigationBarTitleText": "报修暂存工单"
+      }
+    },
+    {
+      "path": "pages/check/check-detail/index",
+      "style": {
+        "navigationBarTitleText": "巡检任务详情"
+      }
+    },
+    {
+      "path": "pages/check/check-execute/index",
+      "style": {
+        "navigationBarTitleText": "巡检任务",
+        "titleNView": {
+          "buttons": [
+            {
+              "text": "工单",
+              "float": "right",
+              "fontSize": "16",
+              "color": "#ffffff"
+            },
+            {
+              "text": "扫描",
+              "float": "right",
+              "fontSize": "16",
+              "color": "#ffffff"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "path": "pages/check/check-execute/second",
+      "style": {
+        "navigationBarTitleText": "巡检任务"
+      }
+    },
+    {
+      "path": "pages/tasks/task-order/index",
+      "style": {
+        "navigationBarTitleText": ""
+      }
+    },
+    {
+      "path": "pages/tasks/task-list/index",
+      "style": {
+        "navigationBarTitleText": ""
+      }
+    },
+    {
+      "path": "pages/tasks/task-create/index",
+      "style": {
+        "navigationBarTitleText": ""
+      }
+    },
+    {
+      "path": "pages/tasks/task-reject/index",
+      "style": {
+        "navigationBarTitleText": "驳回"
+      }
+    },
+    {
+      "path": "pages/tasks/task-transfer/index",
+      "style": {
+        "navigationBarTitleText": "转单"
+      }
+    },
+    {
+      "path": "pages/tasks/task-report/index",
+      "style": {
+        "navigationBarTitleText": "结果上报"
+      }
+    },
+    {
+      "path": "pages/tasks/task-confirm/index",
+      "style": {
+        "navigationBarTitleText": "结果确认"
+      }
+    },
+    {
+      "path": "pages/tasks/task-detail/index",
+      "style": {
+        "navigationBarTitleText": "详情"
+      }
+    },
+    {
+      "path": "pages/tasks/task-attributes/index",
+      "style": {
+        "navigationBarTitleText": ""
+      }
+    },
+    {
+      "path": "pages/device/device-data/index",
+      "style": {
+        "navigationBarTitleText": "设备数据"
+      }
+    },
+    {
+      "path": "pages/device/device-monitor/index",
+      "style": {
+        "navigationBarTitleText": "设备监控"
+      }
+    },
+    {
+      "path": "pages/work-assistant/job-set/index",
+      "style": {
+        "navigationBarTitleText": "在岗设置"
+      }
+    },
+    {
+      "path": "pages/work-assistant/document/index",
+      "style": {
+        "navigationBarTitleText": "图档资料"
+      }
+    },
+    {
+      "path": "pages/work-assistant/document/second",
+      "style": {
+        "navigationBarTitleText": "图档资料",
+        "app-plus": {
+          "softinputMode": "adjustPan",
+          "softinputNavBar": "none"
+        }
+      }
+    },
+    {
+      "path": "pages/login/login",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/bim/index",
+      "style": {
+        "navigationBarTitleText": "模型浏览"
+      }
+    },
+    {
+      "path": "pages/upgrade-popup",
+      "style": {
+        "app-plus": {
+          "animationDuration": "200ms",
+          "animationType": "fade-in",
+          "background": "transparent",
+          "backgroundColorTop": "transparent",
+          "popGesture": "none",
+          "scrollIndicator": "none",
+          "titleNView": {}
+        },
+        "disableScroll": true
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "数字孪生应用平台",
+    "navigationBarBackgroundColor": "#009999",
+    "backgroundColor": "#F8F8F8",
+    "app-plus": {
+      "bounce": "none"
+    }
+  },
+  "uniIdRouter": {}
+}
