@@ -11,6 +11,10 @@
     <view class="item__popup__content">
       <view class="item__popup__content__title u-border-bottom"> 请选择组织结构/节点 </view>
       <scroll-view scroll-y="true" style="height: 80vh" class="item__popup__content__options">
+        <!-- <static-params /> -->
+        <!-- <model-files /> -->
+        <!-- <model-repair-record /> -->
+        <model-online-data />
       </scroll-view>
     </view>
   </u-popup>
@@ -18,6 +22,10 @@
 
 <script setup>
 import ModelActions from './components/model-actions.vue';
+import StaticParams from './components/static-params.vue';
+import ModelFiles from './components/model-files.vue';
+import modelRepairRecord from './components/model-repair-record.vue';
+import ModelOnlineData from './components/model-online-data.vue';
 const modelList = [
   {
     name: '测试模型',

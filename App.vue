@@ -30,7 +30,7 @@ onLaunch(() => {
   });
   // #endif
   // #ifndef APP-PLUS
-  checkLogin();
+  // checkLogin();
   // #endif
 });
 </script>
